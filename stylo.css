@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: #f8fafc;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 520px;
+  margin: auto;
+  padding: 22px 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 26px;
+}
+
+header p {
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.saldo-card {
+  background: linear-gradient(135deg, #16a34a, #065f46);
+  padding: 30px 20px;
+  border-radius: 18px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.saldo-card p {
+  font-size: 15px;
+}
+
+.saldo-card h2 {
+  font-size: clamp(28px, 8vw, 38px);
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 18px 12px;
+  border-radius: 14px;
+  min-width: 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 19px;
+  overflow-wrap: anywhere;
+}
+
+.ganhos h3,
+.valor-ganho {
+  color: #4ade80;
+}
+
+.gastos h3,
+.valor-gasto {
+  color: #fb7185;
+}
+
+.painel {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.painel h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 9px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+input:focus,
+select:focus {
+  border-color: #22c55e;
+}
+
+button {
+  background: #22c55e;
+  color: #052e16;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+#listaMovimentacoes {
+  list-style: none;
+}
+
+.movimentacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.info {
+  min-width: 0;
+  flex: 1;
+}
+
+.info strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.info small {
+  display: block;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.acoes span {
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.excluir {
+  background: #7f1d1d;
+  color: white;
+  padding: 9px 11px;
+  font-size: 14px;
+}
+
+#mensagemVazia {
+  color: #94a3b8;
+  text-align: center;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media (max-width: 360px) {
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .acoes {
+    gap: 5px;
+  }
+}
